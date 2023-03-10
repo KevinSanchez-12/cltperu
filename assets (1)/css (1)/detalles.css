@@ -1,0 +1,64 @@
+.detalles{
+    margin-top: 90px;
+}
+.detalles .banner{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.detalles .titulo{
+    text-align: left !important;
+}
+.detalles .fecha{
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.detalles .fecha i{
+    margin-right: 5px;
+}
+.detalles .contenido{
+    margin-top: 20px;
+    text-align: left;
+    font-size: 1rem;
+}
+.detalles .palabrasClave{
+    margin-top: 20px;
+}
+.detalles .palabrasClave span{
+    margin-left: 5px;
+    font-style: italic;
+}
+h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+.accion{
+    width: 200px;
+    margin-top: 30px;
+}
+.accion i{
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #000;
+}
+.accion .fa-print{
+    background-color: #0984e3;
+}
+.accion .fa-share{
+    background-color: #2ecc71;
+}
+@media screen and (max-width: 1200px){
+    .detalles{
+        margin-top: 62px;
+    }
+}
+@media screen and (max-width: 500px){
+    .detalles .titulo{
+        font-size: 1.5rem !important;
+        margin-top: 20px !important;
+    }
+}

@@ -1,0 +1,17 @@
+.mensaje{
+    margin-top: 140px;
+}
+.mensaje .center{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+.mensaje .center i{
+    transform: rotate(45deg);
+    color: #fff;
+    font-size: 5rem;
+}
+.mensaje .btn{
+    width: 140px;
+}

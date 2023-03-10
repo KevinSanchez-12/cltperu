@@ -1,0 +1,73 @@
+.modal {
+    background-color: rgba(0, 0, 0, 0.623);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.modal .box {
+    background-color: var(--tertiary);
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.modal .box i {
+    border-radius: 5px;
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--secondary);
+    padding: 3px;
+    cursor: pointer;
+    color: var(--secondary);
+    margin-right: 0;
+}
+
+.modal .box p {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.modal .box a {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 200px;
+    margin-top: 30px;
+}
+@media screen and (max-width: 580px){
+    .modal .box{
+        width: 270px;
+    }
+}

@@ -1,0 +1,107 @@
+.pasarela {
+    background-image: url(../img/etc/7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pasarela .box {
+    height: auto;
+    width: 300px;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: var(--primary);
+}
+
+.pasarela .box .logo {
+    width: 300px;
+    display: flex;
+    margin: auto;
+}
+
+.pasarela .box section {
+    margin-top: 40px;
+    position: relative;
+}
+
+.pasarela .box section .logos {
+    position: absolute;
+    z-index: 100;
+    width: 65px;
+    right: 15px;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pasarela .box section .logos img {
+    width: 30px;
+}
+
+.pasarela .box section button {
+    background-color: var(--secondary) !important;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 15px;
+    color: #fff;
+    transition: .3s;
+}
+
+.input-text {
+    width: 268px;
+    height: 19px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    outline: none;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    background-color: #fff !important;
+}
+
+.kr-form-error {
+    font-size: 1rem;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    margin-top: -20px;
+}
+
+.kr-select-placeholder {
+    display: none;
+    background-color: red;
+}
+
+@media screen and (max-width: 400px) {
+    .pasarela .box {
+        width: auto;
+        padding: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .pasarela .box section .logos {
+        right: 5px;
+    }
+
+    .pasarela .box .logo {
+        width: 250px;
+    }
+}

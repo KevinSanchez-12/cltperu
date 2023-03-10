@@ -1,0 +1,104 @@
+.noticias{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    row-gap: 30px;
+}
+.noticias .item{
+    width: 290px;
+    height: auto;
+    background-color: var(--tertiary);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+.noticias .item img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.noticias .item .box{
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: auto;
+}
+.noticias .item .box .titulo{
+    max-height: 75px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.noticias .item .box .titulo h2{
+    text-align: center;
+    font-size: 1.2rem;
+    font-size: 900;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+}
+.noticias .item .box .resumen{
+    max-height: 145px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.noticias .item .box .resumen p{
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+}
+.noticias .item .box div{
+    margin-bottom: 20px;
+}
+.noticias .item .box div p{
+    text-align: center;
+    font-size: 1rem;
+    font-size: 600;
+}
+.noticias .item .box a{
+    display: block;
+    width: 150px;
+    text-align: center;
+    font-weight: 900;
+}
+.noticias .item .box a i{
+    margin-left: 0px;
+    display: none;
+    transition: .3s;
+}
+.noticias .item .box a:hover{
+    color: var(--primary);
+}
+.noticias .item .box a:hover i{
+    margin-left: 2px;
+    display: inline;
+    transition: .3s;
+}
+@media screen and (max-width: 1230px){
+    .noticias{
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+@media screen and (max-width: 950px){
+    .noticias{
+        grid-template-columns: 50% 50%;
+    }
+}
+@media screen and (max-width: 630px){
+    .noticias{
+        grid-template-columns: 100%;
+    }
+}

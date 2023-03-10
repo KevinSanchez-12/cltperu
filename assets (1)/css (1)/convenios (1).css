@@ -1,0 +1,17 @@
+.myConvenios{
+    width: 97%;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 50px;
+    height: 220px;
+}
+.myConvenios div div{
+    width: 240px !important;
+}
+.myConvenios div div img{
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    display: flex;
+    object-fit: cover;
+}

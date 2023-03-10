@@ -1,0 +1,38 @@
+footer{
+    background-color: var(--secondary);
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+footer .container img{
+    width: 280px;
+    margin-bottom: 20px;
+}
+footer .container .social{  
+    width: 180px;
+    height: 50px;
+}
+footer .container .social a{
+    background-color: var(--tertiary);
+    padding: 10px;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+}
+footer .container .email{
+    margin-top: 10px;
+}
+footer .container .email a{
+    color: #fff;
+}
+footer .copyright{
+    margin-top: 40px;
+}
+footer .copyright p{
+    color: #fff;
+    text-align: center;
+}
+footer .copyright p a{
+    color: #fff;
+    font-weight: 800;
+}

@@ -1,0 +1,162 @@
+.loginAdmin {
+    background-image: url(../img/etc/7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginAdmin .box {
+    background-color: var(--tertiary);
+    padding: 30px;
+    border-radius: 5px;
+    max-height: 500px;
+    max-width: 800px;
+    overflow-y: auto;
+}
+
+.loginAdmin .box b {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.loginAdmin .box p {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.loginAdmin .box p span {
+    font-style: italic;
+}
+
+.loginAdmin .box form {
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.loginAdmin .box form input {
+    margin-bottom: 10px;
+}
+
+.loginAdmin .box form p {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.loginAdmin .box form button {
+    margin-top: 10px;
+}
+.box-menu {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary);
+    height: 90px;
+}
+
+.menu {
+    height: auto;
+    width: 100%;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+}
+
+.menu .box {
+    height: 70px;
+    padding: 10px 0px;
+}
+
+.menu .item-a {
+    width: 305px;
+    height: 100%;
+    display: flex;
+}
+
+.menu .item-a li a img {
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    display: flex;
+    margin-left: 0;
+}
+
+.menu .item-b {
+    width: calc(100% - 305px);
+    height: 100%;
+}
+
+.menu .item-b div {
+    margin-right: 0;
+    height: 100%;
+    width: auto;
+}
+
+.menu .item-b div .latest {
+    background-color: var(--secondary);
+}
+
+.menu .item-b div li {
+    margin-left: 10px;
+    padding: 15px 10px;
+    transition: 0.3s;
+    border-radius: 5px;
+    position: relative;
+}
+
+.menu .item-b div li:hover {
+    background-color: var(--secondary);
+}
+
+.menu .item-b div li a {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: 0.3s;
+    padding: 15px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.menu .item-b div img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu .item-b div li a i {
+    margin-left: 5px;
+    transition: .1s;
+}
+@media screen and (max-width: 680px) {
+    .menu .item-a {
+        display: none;
+    }
+    .menu .item-b{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: cente;
+    }
+    .menu .item-b div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: cente;
+    }
+    .menu .item-b div img{
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .loginAdmin .box form input {
+        width: 230px;
+    }
+}
